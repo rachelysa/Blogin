@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>blogin</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+</head>
+
+<body>
+    <header class="main-header">
+        <div class="header-container main-layout flex space-between align-center">
+            <div class="logo">Blogin<span class="logo-dot">.</span></div>
+             <button class="card-menu-btn" onclick="toggleMenu()"><span class="material-icons">menu</span></button>
+             <!-- <button class="card-menu-btn"><span class="material-icons">menu</span></button> -->
+            <div class="nav-links">
+                <button class="close-menu-btn hide" onclick="toggleMenu()"><span class="material-icons">close</span></button>
+                <ul class="main-nav clean-list flex align-center">
+                    
+                    <li class="journal">
+                        <div class="journal-dropdown relative">
+                        <a href="#"  class="main-link">Journal</a>
+                        <ul class="journal-ul">
+                            <li><a href="#">October 2016</a></li>
+                            <li><a  href="#">January 2017</a></li>
+                            <li><a   href="#">April 2017</a></li>
+                            <li><a   href="#">July 2017</a></li>
+                        </ul>
+                    </div>
+                </li>
+                    <li><a href="#" class="main-link" >About</a></li>
+                    <li><a href="#" class="main-link" >Work</a></li>
+                    <li><a href="#" class="main-link" >Contact</a></li>
+                </ul>
+            </div>
+        </div>
+    </header>
+    <main class="main-layout">
+        <div class="card flex">
+            <img class="card-image" src="img/01.jpg" alt="">
+            <div class="card-details  flex-column">
+                <h2 class="card-details-header">Duis aute irure dolor in henderit in voluptate.</h2>
+                <p >Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commo
+                    doconsequat,
+                    sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+
+                   <p class="card-details-txt"> Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla
+                    pariatur...</p>
+                <button class="card-btn" onclick="toggleModal()">Continue Reading</button>
+            </div>
+        </div>
+
+        <div class="card flex">
+            <img class="card-image" src="img/02.jpg" alt="">
+            <div class="card-details flex-column">
+                <h2 class="card-details-header">Duis aute irure dolor in henderit in voluptate.</h2>
+                <p >Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commo
+                    doconsequat,
+                    sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+
+                   <p class="card-details-txt"> Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla
+                    pariatur...</p>
+                <button class="card-btn" onclick="toggleModal()">Continue Reading</button>
+            </div>
+        </div>
+
+        <div class="card flex">
+            <img class="card-image" src="img/03.jpg" alt="">
+            <div class="card-details  flex-column">
+                <h2 class="card-details-header">Duis aute irure dolor in henderit in voluptate.</h2>
+                <p >Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commo
+                    doconsequat,
+                    sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+
+                   <p class="card-details-txt"> Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla
+                    pariatur...</p>
+                <button class="card-btn" onclick="toggleModal()">Continue Reading</button>
+            </div>
+        </div>
+    </main>
+
+    <section  class="main-layout flex relative section">
+        <div class="prev">
+            <span class="material-icons sec-icon">west</span>
+            <span>PREVIOUS</span>
+        </div>
+        <div class="next">
+            <span>NEXT</span>
+            <span class="material-icons sec-icon"> east</span>
+        </div>
+    </section>
+
+    <footer class="footer">
+        <div class="logo">Blogin<span class="logo-dot">.</span></div>
+        <small class="footer-txt">© 2014 Blogin.com  -  All Rights Reserved  -  Find more free Templates at <a>Pixelhint.com</a> </small>
+        <ul class="footer-nav flex">
+            <li class="facebook"><a href="#"></a></li>
+            <li class="twitter"><a href="#"></a></li>
+            <li class="pinterest"><a href="#"></a></li>
+            <li class="be"><a href="#"></a></li>
+        </ul>
+    </footer>
+<div class="modal-back off" onclick="toggleModal()"></div>
+    <section class="modal">
+        <div class="maodl-details">
+            <h2 class="modal-details-header">Duis aute irure dolor in henderit in voluptate.</h2>
+            <p >Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commo
+                doconsequat,
+                sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+
+               <p class="modal-details-txt"> Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla
+                pariatur...</p>
+            <button class="modal-btn" onclick="toggleModal()">CLOSE</button>
+        </div>
+    </section>
+    <script src="js/main.js"></script>
+</body>
+
+</html>
